@@ -1,0 +1,363 @@
+[
+  {
+    "id": 1,
+    "image": "https://source.unsplash.com/featured/?app,technology",
+    "title": "Task Manager Pro",
+    "companyName": "TechFlow Inc.",
+    "description": "Organize tasks efficiently with smart reminders and team collaboration.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 470 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://source.unsplash.com/featured/?fitness,app",
+    "title": "FitTrack",
+    "companyName": "Healthify Ltd.",
+    "description": "Track workouts, calories, and progress with AI insights.",
+    "size": 60,
+    "reviews": 980,
+    "ratingAvg": 4.3,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 380 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://source.unsplash.com/featured/?music,app",
+    "title": "SoundWave",
+    "companyName": "BeatLabs",
+    "description": "Stream and discover millions of songs anytime.",
+    "size": 80,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 940 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://source.unsplash.com/featured/?education,learning",
+    "title": "EduMaster",
+    "companyName": "LearnHub",
+    "description": "Interactive courses and tutorials for all ages.",
+    "size": 55,
+    "reviews": 750,
+    "ratingAvg": 4.2,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 200 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://source.unsplash.com/featured/?finance,app",
+    "title": "MoneyWise",
+    "companyName": "FinCorp",
+    "description": "Manage your finances and track expenses easily.",
+    "size": 50,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 85 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://source.unsplash.com/featured/?travel,app",
+    "title": "Trip Planner",
+    "companyName": "TravelMate",
+    "description": "Plan trips and explore destinations worldwide.",
+    "size": 70,
+    "reviews": 670,
+    "ratingAvg": 4.1,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 195 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://source.unsplash.com/featured/?food,delivery",
+    "title": "FoodExpress",
+    "companyName": "QuickBite",
+    "description": "Order food from your favorite restaurants.",
+    "size": 65,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 560 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://source.unsplash.com/featured/?chat,messaging",
+    "title": "ChatNow",
+    "companyName": "Connectify",
+    "description": "Instant messaging with secure encryption.",
+    "size": 40,
+    "reviews": 1800,
+    "ratingAvg": 4.5,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 640 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://source.unsplash.com/featured/?photo,editing",
+    "title": "PhotoLab",
+    "companyName": "PixelWorks",
+    "description": "Edit photos with professional tools and filters.",
+    "size": 90,
+    "reviews": 1300,
+    "ratingAvg": 4.6,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 530 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://source.unsplash.com/featured/?weather,app",
+    "title": "WeatherNow",
+    "companyName": "SkyTech",
+    "description": "Real-time weather updates and forecasts.",
+    "size": 35,
+    "reviews": 900,
+    "ratingAvg": 4.2,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+
+  {
+    "id": 11,
+    "image": "https://source.unsplash.com/featured/?notes,productivity",
+    "title": "NoteMaster",
+    "companyName": "WriteFlow",
+    "description": "Capture ideas and notes instantly.",
+    "size": 25,
+    "reviews": 600,
+    "ratingAvg": 4.3,
+    "downloads": 20000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 220 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://source.unsplash.com/featured/?gaming,mobile",
+    "title": "BattleZone",
+    "companyName": "GameCore",
+    "description": "Action-packed multiplayer battles.",
+    "size": 120,
+    "reviews": 3000,
+    "ratingAvg": 4.8,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1350 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://source.unsplash.com/featured/?shopping,ecommerce",
+    "title": "ShopEasy",
+    "companyName": "BuySmart",
+    "description": "Shop millions of products online.",
+    "size": 75,
+    "reviews": 1700,
+    "ratingAvg": 4.4,
+    "downloads": 95000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 570 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://source.unsplash.com/featured/?video,streaming",
+    "title": "StreamFlix",
+    "companyName": "MediaHub",
+    "description": "Watch movies and shows on demand.",
+    "size": 100,
+    "reviews": 2500,
+    "ratingAvg": 4.7,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://source.unsplash.com/featured/?security,app",
+    "title": "SecureVault",
+    "companyName": "SafeNet",
+    "description": "Protect your data with advanced encryption.",
+    "size": 30,
+    "reviews": 500,
+    "ratingAvg": 4.1,
+    "downloads": 15000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 130 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://source.unsplash.com/featured/?calendar,planning",
+    "title": "PlanIt",
+    "companyName": "OrganizeMe",
+    "description": "Schedule events and manage your calendar.",
+    "size": 20,
+    "reviews": 400,
+    "ratingAvg": 4.0,
+    "downloads": 12000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 120 },
+      { "name": "5 star", "count": 110 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://source.unsplash.com/featured/?map,navigation",
+    "title": "MapGuide",
+    "companyName": "GeoTech",
+    "description": "Navigate routes with real-time traffic updates.",
+    "size": 85,
+    "reviews": 1400,
+    "ratingAvg": 4.5,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 510 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://source.unsplash.com/featured/?books,reading",
+    "title": "BookReader",
+    "companyName": "Readify",
+    "description": "Access thousands of ebooks anytime.",
+    "size": 55,
+    "reviews": 800,
+    "ratingAvg": 4.3,
+    "downloads": 35000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://source.unsplash.com/featured/?kids,learning",
+    "title": "KidsLearn",
+    "companyName": "EduPlay",
+    "description": "Fun learning games for children.",
+    "size": 40,
+    "reviews": 650,
+    "ratingAvg": 4.4,
+    "downloads": 28000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 230 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://source.unsplash.com/featured/?ai,technology",
+    "title": "AI Assistant",
+    "companyName": "NextGen AI",
+    "description": "Smart assistant for daily tasks and automation.",
+    "size": 95,
+    "reviews": 2200,
+    "ratingAvg": 4.7,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 910 }
+    ]
+  }
+]

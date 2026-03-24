@@ -1,3 +1,4 @@
+import axios from "axios";
 import { createBrowserRouter } from "react-router";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
@@ -13,7 +14,11 @@ export const router = createBrowserRouter([
         {
             index: true,
             path: "/",
-            Component: Home
+            Component: Home,
+            loader: async () => {
+              const res = await axios.get("./data.json");
+              return res.data
+            }
         }
     ]
   }
