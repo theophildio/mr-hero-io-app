@@ -1,4 +1,12 @@
 import { useLoaderData, useParams } from "react-router";
+import {
+    Bar,
+    BarChart,
+    ResponsiveContainer,
+    Tooltip,
+    XAxis,
+    YAxis,
+} from "recharts";
 import Download from "../../assets/icon-downloads.png";
 import Star from "../../assets/icon-ratings.png";
 import Review from "../../assets/icon-review.png";
@@ -8,14 +16,28 @@ const AppDetails = () => {
   const appId = parseInt(id);
   const apps = useLoaderData();
   const singleApp = apps.find((app) => app.id === appId);
-  const { image, title, companyName, downloads, ratingAvg, reviews, description, size } =
-    singleApp;
+  const {
+    image,
+    title,
+    companyName,
+    downloads,
+    ratingAvg,
+    reviews,
+    description,
+    size,
+    ratings,
+  } = singleApp;
 
   const formatDownloads = (num) =>
     new Intl.NumberFormat("en", {
       notation: "compact",
       compactDisplay: "short",
     }).format(num);
+
+  const data = [...ratings].reverse().map((item) => ({
+    name: item.name,
+    count: item.count,
+  }));
 
   return (
     <div className="p-16 bg-[#F5F5F5]">
@@ -67,11 +89,31 @@ const AppDetails = () => {
               </h5>
             </div>
           </div>
-          <button className="btn bg-[#00d390] text-white">Install Now ({size} MB)</button>
+          <button className="btn bg-[#00d390] text-white">
+            Install Now ({size} MB)
+          </button>
         </div>
       </div>
       <div className="mt-6 border-t border-t-slate-200 py-4">
         <h3 className="text-xl font-bold">Ratings</h3>
+        <div>
+          <div className="w-full h-64">
+            <ResponsiveContainer>
+              <BarChart
+                data={data}
+                layout="vertical"
+                margin={{ top: 10, right: 20, left: 20, bottom: 10 }}
+              >
+                <XAxis type="number" />
+                <YAxis dataKey="name" type="category" />
+
+                <Tooltip />
+
+                <Bar dataKey="count" fill="#FF8811" radius={[4, 4, 4, 4]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
       </div>
       <div className="mt-6 border-t border-t-slate-200 py-4">
         <h3 className="text-xl font-bold">Description</h3>
