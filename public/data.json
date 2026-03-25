@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://source.unsplash.com/featured/?app,technology",
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
     "title": "Task Manager Pro",
     "companyName": "TechFlow Inc.",
     "description": "Organize tasks efficiently with smart reminders and team collaboration.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "https://source.unsplash.com/featured/?fitness,app",
+    "image": "https://cdn-icons-png.flaticon.com/512/2936/2936886.png",
     "title": "FitTrack",
     "companyName": "Healthify Ltd.",
     "description": "Track workouts, calories, and progress with AI insights.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "https://source.unsplash.com/featured/?music,app",
+    "image": "https://cdn-icons-png.flaticon.com/512/727/727269.png",
     "title": "SoundWave",
     "companyName": "BeatLabs",
     "description": "Stream and discover millions of songs anytime.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "https://source.unsplash.com/featured/?education,learning",
+    "image": "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
     "title": "EduMaster",
     "companyName": "LearnHub",
     "description": "Interactive courses and tutorials for all ages.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "https://source.unsplash.com/featured/?finance,app",
+    "image": "https://cdn-icons-png.flaticon.com/512/2331/2331943.png",
     "title": "MoneyWise",
     "companyName": "FinCorp",
     "description": "Manage your finances and track expenses easily.",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "image": "https://source.unsplash.com/featured/?travel,app",
+    "image": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
     "title": "Trip Planner",
     "companyName": "TravelMate",
     "description": "Plan trips and explore destinations worldwide.",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "image": "https://source.unsplash.com/featured/?food,delivery",
+    "image": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
     "title": "FoodExpress",
     "companyName": "QuickBite",
     "description": "Order food from your favorite restaurants.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "https://source.unsplash.com/featured/?chat,messaging",
+    "image": "https://cdn-icons-png.flaticon.com/512/2462/2462719.png",
     "title": "ChatNow",
     "companyName": "Connectify",
     "description": "Instant messaging with secure encryption.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "https://source.unsplash.com/featured/?photo,editing",
+    "image": "https://cdn-icons-png.flaticon.com/512/1829/1829586.png",
     "title": "PhotoLab",
     "companyName": "PixelWorks",
     "description": "Edit photos with professional tools and filters.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 10,
-    "image": "https://source.unsplash.com/featured/?weather,app",
+    "image": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
     "title": "WeatherNow",
     "companyName": "SkyTech",
     "description": "Real-time weather updates and forecasts.",
@@ -182,7 +182,7 @@
 
   {
     "id": 11,
-    "image": "https://source.unsplash.com/featured/?notes,productivity",
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921222.png",
     "title": "NoteMaster",
     "companyName": "WriteFlow",
     "description": "Capture ideas and notes instantly.",
@@ -200,7 +200,7 @@
   },
   {
     "id": 12,
-    "image": "https://source.unsplash.com/featured/?gaming,mobile",
+    "image": "https://cdn-icons-png.flaticon.com/512/686/686589.png",
     "title": "BattleZone",
     "companyName": "GameCore",
     "description": "Action-packed multiplayer battles.",
@@ -218,7 +218,7 @@
   },
   {
     "id": 13,
-    "image": "https://source.unsplash.com/featured/?shopping,ecommerce",
+    "image": "https://cdn-icons-png.flaticon.com/512/1170/1170678.png",
     "title": "ShopEasy",
     "companyName": "BuySmart",
     "description": "Shop millions of products online.",
@@ -236,7 +236,7 @@
   },
   {
     "id": 14,
-    "image": "https://source.unsplash.com/featured/?video,streaming",
+    "image": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
     "title": "StreamFlix",
     "companyName": "MediaHub",
     "description": "Watch movies and shows on demand.",
@@ -254,7 +254,7 @@
   },
   {
     "id": 15,
-    "image": "https://source.unsplash.com/featured/?security,app",
+    "image": "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
     "title": "SecureVault",
     "companyName": "SafeNet",
     "description": "Protect your data with advanced encryption.",
@@ -272,7 +272,7 @@
   },
   {
     "id": 16,
-    "image": "https://source.unsplash.com/featured/?calendar,planning",
+    "image": "https://cdn-icons-png.flaticon.com/512/747/747310.png",
     "title": "PlanIt",
     "companyName": "OrganizeMe",
     "description": "Schedule events and manage your calendar.",
@@ -290,7 +290,7 @@
   },
   {
     "id": 17,
-    "image": "https://source.unsplash.com/featured/?map,navigation",
+    "image": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
     "title": "MapGuide",
     "companyName": "GeoTech",
     "description": "Navigate routes with real-time traffic updates.",
@@ -308,7 +308,7 @@
   },
   {
     "id": 18,
-    "image": "https://source.unsplash.com/featured/?books,reading",
+    "image": "https://cdn-icons-png.flaticon.com/512/29/29302.png",
     "title": "BookReader",
     "companyName": "Readify",
     "description": "Access thousands of ebooks anytime.",
@@ -326,7 +326,7 @@
   },
   {
     "id": 19,
-    "image": "https://source.unsplash.com/featured/?kids,learning",
+    "image": "https://cdn-icons-png.flaticon.com/512/1995/1995574.png",
     "title": "KidsLearn",
     "companyName": "EduPlay",
     "description": "Fun learning games for children.",
@@ -344,7 +344,7 @@
   },
   {
     "id": 20,
-    "image": "https://source.unsplash.com/featured/?ai,technology",
+    "image": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
     "title": "AI Assistant",
     "companyName": "NextGen AI",
     "description": "Smart assistant for daily tasks and automation.",

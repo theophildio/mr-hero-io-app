@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createBrowserRouter } from "react-router";
+import AllApps from "../pages/AllApps/AllApps";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Root from "../pages/Root/Root";
@@ -17,9 +18,17 @@ export const router = createBrowserRouter([
             Component: Home,
             loader: async () => {
               const res = await axios.get("./data.json");
-              return res.data
+              return res.data;
             }
+        },
+        {
+        path: "/apps",
+        Component: AllApps,
+        loader: async () => {
+          const res = await axios.get("./data.json");
+          return res.data;
         }
+      }
     ]
   }
 ]);
