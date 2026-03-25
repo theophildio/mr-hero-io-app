@@ -11,12 +11,12 @@ const Product = ({ product }) => {
     }).format(num);
 
   return (
-    <div className="card bg-base-100 shadow-sm p-5">
-      <figure>
-        <img className="w-1/3" src={image} alt={title} />
+    <div className="flex flex-col justify-between bg-base-100 shadow-md p-5 h-[350px] rounded-lg">
+      <figure className="flex flex-col items-center">
+        <img className="w-2/3" src={image} alt={title} />
       </figure>
-      <div className="card-body p-0 mt-4">
-        <h3 className="card-title">{title}</h3>
+      <div className="p-0 mt-4">
+        <h3 className="card-title mb-2">{title}</h3>
         <div className="card-actions justify-between p-0">
           <div className="badge bg-[#F1F5E8] text-[#00D390] rounded-sm">
             <img className="w-4" src={Download} alt={Download} />
