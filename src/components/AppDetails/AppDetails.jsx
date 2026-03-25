@@ -1,15 +1,16 @@
 import { useLoaderData, useParams } from "react-router";
 import {
-    Bar,
-    BarChart,
-    ResponsiveContainer,
-    Tooltip,
-    XAxis,
-    YAxis,
+  Bar,
+  BarChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
 import Download from "../../assets/icon-downloads.png";
 import Star from "../../assets/icon-ratings.png";
 import Review from "../../assets/icon-review.png";
+import { addAppToDB } from "../../utilities/addToDB";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -38,6 +39,11 @@ const AppDetails = () => {
     name: item.name,
     count: item.count,
   }));
+
+  const handleAppInstall = id => {
+    console.log(id);
+    addAppToDB(id);
+  }
 
   return (
     <div className="p-16 bg-[#F5F5F5]">
@@ -89,7 +95,7 @@ const AppDetails = () => {
               </h5>
             </div>
           </div>
-          <button className="btn bg-[#00d390] text-white">
+          <button onClick={()=> handleAppInstall(id)} className="btn bg-[#00d390] text-white">
             Install Now ({size} MB)
           </button>
         </div>
@@ -98,7 +104,7 @@ const AppDetails = () => {
         <h3 className="text-xl font-bold">Ratings</h3>
         <div>
           <div className="w-full h-64">
-            <ResponsiveContainer>
+            <ResponsiveContainer width="100%" height={300}>
               <BarChart
                 data={data}
                 layout="vertical"

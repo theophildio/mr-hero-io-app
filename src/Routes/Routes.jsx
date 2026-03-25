@@ -4,6 +4,7 @@ import AppDetails from "../components/AppDetails/AppDetails";
 import AllApps from "../pages/AllApps/AllApps";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
+import Installation from "../pages/Installation/Installation";
 import Root from "../pages/Root/Root";
 
 
@@ -37,7 +38,15 @@ export const router = createBrowserRouter([
           const res = await axios.get("/data.json");
           return res.data;
         }
+      },
+      {
+        path: "/installation",
+        Component: Installation,
+        loader: async () => {
+          const res = await axios.get("/data.json");
+          return res.data;
       }
+    }
     ]
   }
 ]);
