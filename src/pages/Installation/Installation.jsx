@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { Link, useLoaderData } from "react-router";
 import ErrorApp from "../../assets/App-Error.png";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
@@ -41,6 +42,7 @@ const Installation = () => {
 
     const updatedList = appList.filter((app) => app.id !== id);
     setAppList(updatedList);
+    toast("App Uninstalled ❌");
   };
 
   return (

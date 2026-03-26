@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 const getAppFromDB = () => {
     const storedAppSTR = localStorage.getItem("appInstalled");
 
@@ -15,7 +17,7 @@ const addAppToDB = id => {
     const storedAppData = getAppFromDB();
 
     if (storedAppData.includes(id)) {
-        alert("App already installed!");
+        toast.error("App already installed!");
     }
     else {
         storedAppData.push(id);

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router";
 import {
   Bar,
@@ -54,6 +55,7 @@ const AppDetails = () => {
   const handleAppInstall = (id) => {
     addAppToDB(id);
     setIsInstalled(true);
+    toast.success("App Installed Successfully 🎉");
   };
 
   return (
