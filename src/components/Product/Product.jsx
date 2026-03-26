@@ -13,12 +13,12 @@ const Product = ({ product }) => {
 
   return (
     <Link to={`/app/appdetails/${id}`}>
-      <div className="flex flex-col justify-between bg-base-100 shadow-md p-5 h-[87.5] rounded-lg">
+      <div className="flex flex-col justify-between bg-base-100 shadow-md p-2 md:p-5 h-[87.5] rounded-lg">
         <figure className="flex flex-col items-center">
           <img className="w-2/3" src={image} alt={title} />
         </figure>
         <div className="p-0 mt-4">
-          <h3 className="card-title mb-2">{title}</h3>
+          <h3 className="text-md md:card-title mb-2">{title}</h3>
           <div className="card-actions justify-between p-0">
             <div className="badge bg-[#F1F5E8] text-[#00D390] rounded-sm">
               <img className="w-4" src={Download} alt={Download} />

@@ -3,8 +3,8 @@ import Products from "../Products/Products";
 
 const HeroApps = ({ products }) => {
   return (
-    <div className="py-16 px-16 mx-auto text-center bg-[#D9D9D9]">
-      <h2 className="text-5xl font-bold">Trending Apps</h2>
+    <div className="py-3 md:py-16 px-3 md:px-16 mx-auto text-center bg-[#D9D9D9]">
+      <h2 className="text-3xl md:text-5xl font-bold">Trending Apps</h2>
       <p className="pt-4 text-[#627382]">
         Explore All Trending Apps on the Market developed by us
       </p>

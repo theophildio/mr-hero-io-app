@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="navbar bg-base-100 shadow-sm px-16">
+      <div className="navbar bg-base-100 shadow-sm md:px-16 px-2">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0 pr-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -49,7 +49,7 @@ const Navbar = () => {
             </ul>
           </div>
           <img className="w-8" src={Logo} alt="Hero IO Logo" />
-          <span className="text-xl uppercase ml-1">hero.io</span>
+          <span className="text-lg md:text-xl uppercase ml-1">hero.io</span>
         </div>
 
         <div className="navbar-center hidden lg:flex">
