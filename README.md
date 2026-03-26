@@ -46,3 +46,27 @@ The app features a responsive navigation bar, footer, and fully functional routi
 - **Tailwind CSS** - Responsive styling
 - **LocalStorage** - Persisting installed apps locally
 - **Vite** - Fast build tool and dev server
+
+---
+
+## Folder Structure
+
+src/
+├─ assets/ # Images and icons
+├─ components/ # Navbar, Footer, Products, InstalledApp, etc.
+├─ pages/ # Home, AllApps, Installation, AppDetails
+├─ utilities/ # localStorage helpers, API utilities
+├─ Routes/ # Router configuration
+└─ index.jsx # Entry point
+
+---
+
+## Open in your browser:
+
+[Live Demo](https://hero-io-theophil-dio.netlify.app)
+
+---
+
+## Author
+
+Theophil Dio
