@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
-import { getAppFromDB } from "../../utilities/addToDB";
+import { getAppFromDB, removeAppFromDB } from "../../utilities/addToDB";
 
 const Installation = () => {
   const apps = useLoaderData();
@@ -34,6 +34,13 @@ const Installation = () => {
       setSortLabel("Size: Smaller to Bigger ⬆️");
     }
   };
+
+  const handleUninstall = (id) => {
+  removeAppFromDB(id);
+
+  const updatedList = appList.filter((app) => app.id !== id);
+  setAppList(updatedList);
+};
 
   return (
     <div className="py-16 px-16 mx-auto text-center bg-[#D9D9D9]">
@@ -69,6 +76,7 @@ const Installation = () => {
           <InstalledApp
             key={installApp.id}
             installApp={installApp}
+            handleUninstall={handleUninstall}
           ></InstalledApp>
         ))}
       </div>

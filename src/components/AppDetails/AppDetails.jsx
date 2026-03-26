@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import {
   Bar,
@@ -10,9 +11,10 @@ import {
 import Download from "../../assets/icon-downloads.png";
 import Star from "../../assets/icon-ratings.png";
 import Review from "../../assets/icon-review.png";
-import { addAppToDB } from "../../utilities/addToDB";
+import { addAppToDB, getAppFromDB } from "../../utilities/addToDB";
 
 const AppDetails = () => {
+  const [isInstalled, setIsInstalled] = useState(false);
   const { id } = useParams();
   const appId = parseInt(id);
   const apps = useLoaderData();
@@ -29,6 +31,15 @@ const AppDetails = () => {
     ratings,
   } = singleApp;
 
+  useEffect(() => {
+    const storedApps = getAppFromDB();
+    const convertToNum = storedApps.map((item) => parseInt(item));
+
+    if (convertToNum.includes(appId)) {
+      setIsInstalled(true);
+    }
+  }, [appId]);
+
   const formatDownloads = (num) =>
     new Intl.NumberFormat("en", {
       notation: "compact",
@@ -40,10 +51,10 @@ const AppDetails = () => {
     count: item.count,
   }));
 
-  const handleAppInstall = id => {
-    console.log(id);
+  const handleAppInstall = (id) => {
     addAppToDB(id);
-  }
+    setIsInstalled(true);
+  };
 
   return (
     <div className="p-16 bg-[#F5F5F5]">
@@ -95,8 +106,14 @@ const AppDetails = () => {
               </h5>
             </div>
           </div>
-          <button onClick={()=> handleAppInstall(id)} className="btn bg-[#00d390] text-white">
-            Install Now ({size} MB)
+          <button
+            onClick={() => handleAppInstall(id)}
+            disabled={isInstalled}
+            className={`btn ${
+              isInstalled ? "bg-gray-400 cursor-not-allowed" : "bg-[#00d390]"
+            } text-white`}
+          >
+            {isInstalled ? "Installed" : `Install Now (${size} MB)`}
           </button>
         </div>
       </div>
