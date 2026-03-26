@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import Error from "../../assets/error-404.png";
 
 const ErrorPage = () => {
@@ -8,8 +8,8 @@ const ErrorPage = () => {
         <figure>
             <img src={Error} alt="404 Error" />
         </figure>
-        <h2 className="text-3xl font-bold">Oops, page not found!</h2>
-        <p>The page you are looking for is not available.</p>
+        <h2 className="text-3xl font-bold text-center">Oops, page not found!</h2>
+        <p className="text-center">The page you are looking for is not available.</p>
         <Link to="/" className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] px-8 text-white">
           Go Back
         </Link>

@@ -1,6 +1,6 @@
 const Stat = () => {
   return (
-    <div className="px-3 py-3 md:py-16 bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
+    <div className="px-8 md:px-0 py-3 md:py-16 bg-linear-to-r from-[#632EE3] to-[#9F62F2]">
       <h2 className="text-3xl md:text-5xl font-bold text-center text-white">Trusted by Millions, Built for You</h2>
       <div className="flex justify-center items-center pt-3 md:pt-6">
         <div className="stats grid-flow-row md:grid-flow-col">

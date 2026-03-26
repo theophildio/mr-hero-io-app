@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
         },
       },
       {
-        path: "/app/appdetails/:id",
+        path: "/apps/appdetails/:id",
         element: <AppDetails />,
         loader: async () => {
           const res = await axios.get("/data.json");

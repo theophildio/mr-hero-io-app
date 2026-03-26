@@ -46,7 +46,7 @@ const Installation = () => {
   };
 
   return (
-    <div className="py-16 px-16 mx-auto text-center bg-[#D9D9D9]">
+    <div className="py-3 md:py-16 px-3 md:px-16 mx-auto text-center bg-[#D9D9D9]">
       {appList.length === 0 ? (
         <div className="text-center py-10">
           <figure>
@@ -70,7 +70,7 @@ const Installation = () => {
         </div>
       ) : (
         <>
-          <h2 className="text-5xl font-bold">Your Installed Apps</h2>
+          <h2 className="text-3xl md:text-5xl font-bold">Your Installed Apps</h2>
           <p className="pt-4 text-[#627382]">
             Explore All Trending Apps on the Market developed by us
           </p>

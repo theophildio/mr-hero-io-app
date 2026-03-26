@@ -66,7 +66,7 @@ const AppDetails = () => {
         </figure>
         <div className="w-full">
           <div>
-            <h3 className="text-lg md:text-3xl font-bold">{title}</h3>
+            <h3 className="text-xl md:text-3xl font-bold">{title}</h3>
             <p className="text-xs">
               Developed by{" "}
               <span className="text-purple-600">{companyName}</span>

@@ -24,15 +24,15 @@ const AllApps = () => {
   }, [searchText, products]);
 
   return (
-    <div className="py-16 px-16 text-center bg-[#D9D9D9]">
-      <h2 className="text-5xl font-bold">Our All Applications</h2>
+    <div className="py-3 md:py-16 px-3 md:px-16 text-center bg-[#D9D9D9]">
+      <h2 className="text-3xl md:text-5xl font-bold">Our All Applications</h2>
       <p className="pt-4 text-[#627382]">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
-      <div className="flex justify-between mt-6">
+      <div className="flex justify-between items-center mt-3 md:mt-6">
         <p className="font-bold">({filteredProducts.length}) Apps Found</p>
-        <label className="input">
+        <label className="input w-2/4 md:w-1/4">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"
