@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import ErrorApp from "../../assets/App-Error.png";
 import Products from "../../components/Products/Products";
@@ -6,16 +6,30 @@ import Products from "../../components/Products/Products";
 const AllApps = () => {
   const products = useLoaderData();
   const [searchText, setSearchText] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [isSearching, setIsSearching] = useState(false);
 
-  const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(searchText.toLowerCase()),
-  );
+  useEffect(() => {
+    setIsSearching(true);
+
+    const timeout = setTimeout(() => {
+      const filtered = products.filter((product) =>
+        product.title.toLowerCase().includes(searchText.toLowerCase()),
+      );
+      setFilteredProducts(filtered);
+      setIsSearching(false);
+    }, 300);
+
+    return () => clearTimeout(timeout);
+  }, [searchText, products]);
+
   return (
     <div className="py-16 px-16 text-center bg-[#D9D9D9]">
       <h2 className="text-5xl font-bold">Our All Applications</h2>
       <p className="pt-4 text-[#627382]">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
+
       <div className="flex justify-between mt-6">
         <p className="font-bold">({filteredProducts.length}) Apps Found</p>
         <label className="input">
@@ -43,8 +57,13 @@ const AllApps = () => {
           />
         </label>
       </div>
+
       <div className="pt-5">
-        {filteredProducts.length === 0 ? (
+        {isSearching ? (
+          <div className="flex justify-center py-20">
+            <span className="loading loading-spinner text-primary text-6xl"></span>
+          </div>
+        ) : filteredProducts.length === 0 ? (
           <div className="text-center py-10">
             <figure>
               <img
@@ -55,8 +74,8 @@ const AllApps = () => {
             </figure>
             <h2 className="text-3xl font-bold">OPPS!! APP NOT FOUND</h2>
             <p className="text-gray-500 my-4">
-              The App you are requesting is not found on our system. please try
-              another apps
+              The App you are requesting is not found on our system. Please try
+              another app.
             </p>
             <Link
               to="/"
