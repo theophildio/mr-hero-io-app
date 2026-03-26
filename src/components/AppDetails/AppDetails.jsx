@@ -59,29 +59,29 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="p-16 bg-[#F5F5F5]">
-      <div className="flex gap-8">
+    <div className="p-3 md:p-16 bg-[#F5F5F5]">
+      <div className="flex gap-3 md:gap-8">
         <figure>
-          <img className="w-80" src={image} alt={title} />
+          <img className="w-32 md:w-80" src={image} alt={title} />
         </figure>
         <div className="w-full">
           <div>
-            <h3 className="text-3xl font-bold">{title}</h3>
-            <p>
+            <h3 className="text-lg md:text-3xl font-bold">{title}</h3>
+            <p className="text-xs">
               Developed by{" "}
               <span className="text-purple-600">{companyName}</span>
             </p>
           </div>
 
-          <div className="flex gap-12 mt-6 border-t border-t-slate-200 py-4">
+          <div className="flex gap-2 md:gap-12 mt-3 md:t-6 border-t border-t-slate-200 py-4">
             <div>
               <figure>
                 <img className="w-5" src={Download} alt={title} />
               </figure>
               <p>
-                <small>Downloads</small>
+                <small className="text-xs">Downloads</small>
               </p>
-              <h5 className="text-2xl font-extrabold">
+              <h5 className="text-lg md:text-2xl font-extrabold">
                 {formatDownloads(downloads)}
               </h5>
             </div>
@@ -90,9 +90,9 @@ const AppDetails = () => {
                 <img className="w-5" src={Star} alt={title} />
               </figure>
               <p>
-                <small>Average Ratings</small>
+                <small className="text-xs">Average Ratings</small>
               </p>
-              <h5 className="text-2xl font-extrabold">
+              <h5 className="text-lg md:text-2xl font-extrabold">
                 {formatDownloads(ratingAvg)}
               </h5>
             </div>
@@ -101,9 +101,9 @@ const AppDetails = () => {
                 <img className="w-5" src={Review} alt={title} />
               </figure>
               <p>
-                <small>Total Reviews</small>
+                <small className="text-xs">Total Reviews</small>
               </p>
-              <h5 className="text-2xl font-extrabold">
+              <h5 className="text-lg md:text-2xl font-extrabold">
                 {formatDownloads(reviews)}
               </h5>
             </div>
