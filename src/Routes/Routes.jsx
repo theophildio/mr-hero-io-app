@@ -1,5 +1,5 @@
 import axios from "axios";
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 import AppDetails from "../components/AppDetails/AppDetails";
 import AllApps from "../pages/AllApps/AllApps";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
@@ -10,12 +10,11 @@ import Root from "../pages/Root/Root";
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: Root,
+    element: <Root />,
     children: [
       {
         index: true,
-        path: "/",
-        Component: Home,
+        element: <Home />,
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
@@ -23,7 +22,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/apps",
-        Component: AllApps,
+        element: <AllApps />,
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
@@ -31,7 +30,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/app/appdetails/:id",
-        Component: AppDetails,
+        element: <AppDetails />,
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
@@ -39,7 +38,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/installation",
-        Component: Installation,
+        element: <Installation />,
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
@@ -47,8 +46,8 @@ export const router = createBrowserRouter([
       },
       {
         path: "*",
-        Component: ErrorPage,
-      }
+        element: <ErrorPage />,
+      },
     ],
   },
 ]);

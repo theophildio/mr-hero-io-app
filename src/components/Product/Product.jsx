@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import Download from "../../assets/icon-downloads.png";
 import Rating from "../../assets/icon-ratings.png";
 

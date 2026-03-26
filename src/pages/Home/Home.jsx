@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router";
+import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import HeroApps from "../../components/HeroApps/HeroApps";
 import Stat from "../../components/Stat/Stat";

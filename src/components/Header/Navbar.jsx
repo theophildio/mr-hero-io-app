@@ -1,14 +1,18 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router-dom";
 import Git from "../../assets/github.png";
 import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "Apps", path: "/apps" },
+    { name: "Installation", path: "/installation" },
+  ];
 
-    const links = <>
-        <Link to="/" className="mr-4">Home</Link>
-        <Link to="/apps" className="mr-4">Apps</Link>
-        <Link to="/installation" className="mr-0">Installation</Link>
-    </>
+  const linkClass = ({ isActive }) =>
+    `mr-4 px-3 py-1 rounded-md font-medium ${
+      isActive ? "bg-transparent underline text-purple-600" : "text-gray-700 hover:text-purple-600 hover:bg-transparent hover:underline"
+    }`;
 
   return (
     <nav>
@@ -23,32 +27,53 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              {links}
+              {links.map((link) => (
+                <li key={link.name}>
+                  <NavLink to={link.path} className={linkClass}>
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
           <img className="w-8" src={Logo} alt="Hero IO Logo" />
-          <a className="text-xl uppercase ml-1">hero.io</a>
+          <span className="text-xl uppercase ml-1">hero.io</span>
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            {links}
+            {links.map((link) => (
+              <li key={link.name}>
+                <NavLink to={link.path} className={linkClass}>
+                  {link.name}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
+
         <div className="navbar-end">
-          <Link to="https://github.com/theophildio" target="_blank" className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white"><img src={Git} alt="GitHub icon" />Contribute</Link>
+          <a
+            href="https://github.com/theophildio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white flex items-center gap-2"
+          >
+            <img src={Git} alt="GitHub icon" />
+            Contribute
+          </a>
         </div>
       </div>
     </nav>

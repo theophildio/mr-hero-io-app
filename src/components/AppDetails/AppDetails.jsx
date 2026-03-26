@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useParams } from "react-router-dom";
 import {
   Bar,
   BarChart,

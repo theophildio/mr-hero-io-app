@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { Link, useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router-dom";
 import ErrorApp from "../../assets/App-Error.png";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { getAppFromDB, removeAppFromDB } from "../../utilities/addToDB";
