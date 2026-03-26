@@ -52,12 +52,22 @@ The app features a responsive navigation bar, footer, and fully functional routi
 ## Folder Structure
 
 src/
-├─ assets/ # Images and icons
-├─ components/ # Navbar, Footer, Products, InstalledApp, etc.
-├─ pages/ # Home, AllApps, Installation, AppDetails
-├─ utilities/ # localStorage helpers, API utilities
-├─ Routes/ # Router configuration
-└─ index.jsx # Entry point
+├─ assets/
+│ ├─ logo.png
+│ └─ github.png
+├─ components/
+│ ├─ Navbar.jsx
+│ ├─ Footer.jsx
+│ └─ Products.jsx
+├─ pages/
+│ ├─ Home.jsx
+│ ├─ AllApps.jsx
+│ └─ Installation.jsx
+├─ utilities/
+│ └─ addToDB.js
+├─ Routes/
+│ └─ Routes.jsx
+└─ index.jsx
 
 ---
 
