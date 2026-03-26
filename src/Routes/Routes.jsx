@@ -7,29 +7,27 @@ import Home from "../pages/Home/Home";
 import Installation from "../pages/Installation/Installation";
 import Root from "../pages/Root/Root";
 
-
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
-    errorElement: <ErrorPage />,
     children: [
-        {
-            index: true,
-            path: "/",
-            Component: Home,
-            loader: async () => {
-              const res = await axios.get("/data.json");
-              return res.data;
-            }
+      {
+        index: true,
+        path: "/",
+        Component: Home,
+        loader: async () => {
+          const res = await axios.get("/data.json");
+          return res.data;
         },
-        {
+      },
+      {
         path: "/apps",
         Component: AllApps,
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
-        }
+        },
       },
       {
         path: "/app/appdetails/:id",
@@ -37,7 +35,7 @@ export const router = createBrowserRouter([
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
-        }
+        },
       },
       {
         path: "/installation",
@@ -45,8 +43,12 @@ export const router = createBrowserRouter([
         loader: async () => {
           const res = await axios.get("/data.json");
           return res.data;
+        },
+      },
+      {
+        path: "*",
+        Component: ErrorPage,
       }
-    }
-    ]
-  }
+    ],
+  },
 ]);
