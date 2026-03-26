@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
+    "image": "https://i.ibb.co.com/5hk8v9nR/hero-1.png",
     "title": "Task Manager Pro",
     "companyName": "TechFlow Inc.",
     "description": "Task Manager Pro helps you organize your daily tasks efficiently with a clean and intuitive interface. You can create tasks, set deadlines, and categorize your work to stay focused and productive.\n\nIt includes smart reminders and notifications so you never miss important deadlines. Team collaboration features allow you to assign tasks and track progress easily.\n\nWith cloud sync and cross-device support, your tasks are always accessible. It is perfect for professionals, students, and teams who want better productivity.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "https://cdn-icons-png.flaticon.com/512/2936/2936886.png",
+    "image": "https://i.ibb.co.com/fVVN7cnJ/hero-2.png",
     "title": "FitTrack",
     "companyName": "Healthify Ltd.",
     "description": "FitTrack is your personal fitness companion to help you stay active and healthy. It tracks workouts, calories, and daily activities with ease.\n\nAI-powered insights analyze your progress and suggest personalized workout plans. It adapts whether your goal is weight loss, muscle gain, or general fitness.\n\nWith detailed stats and charts, you stay motivated every day. It also integrates with wearable devices for a complete fitness experience.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "https://cdn-icons-png.flaticon.com/512/727/727269.png",
+    "image": "https://i.ibb.co.com/qFN6JMf6/hero-3.png",
     "title": "SoundWave",
     "companyName": "BeatLabs",
     "description": "SoundWave lets you stream and discover millions of songs worldwide. You can create playlists and enjoy high-quality music anytime.\n\nIt provides personalized recommendations based on your listening habits. Offline mode allows listening without internet.\n\nFrom pop to classical, all genres are available in one place. It’s the perfect music companion for every moment.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
+    "image": "https://i.ibb.co.com/Lh1fVxyk/hero-4.png",
     "title": "EduMaster",
     "companyName": "LearnHub",
     "description": "EduMaster offers interactive courses and tutorials for learners of all ages. It makes learning simple and engaging.\n\nThe platform includes videos, quizzes, and progress tracking. You can learn at your own pace anytime.\n\nFrom academic subjects to skills, it’s a complete learning solution. Perfect for students and professionals.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "https://cdn-icons-png.flaticon.com/512/2331/2331943.png",
+    "image": "https://i.ibb.co.com/8L3VWgG6/hero-5.png",
     "title": "MoneyWise",
     "companyName": "FinCorp",
     "description": "MoneyWise helps you manage finances and track expenses easily. It keeps your spending organized.\n\nYou can set budgets, monitor transactions, and get insights into your habits. It simplifies money management.\n\nWith reports and charts, you can make smarter financial decisions. Ideal for personal finance tracking.",
@@ -92,7 +92,7 @@
 
   {
     "id": 6,
-    "image": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
+    "image": "https://i.ibb.co.com/0V2fK5t8/hero-6.png",
     "title": "Trip Planner",
     "companyName": "TravelMate",
     "description": "Trip Planner helps you organize your trips and travel plans easily. You can create itineraries and explore destinations.\n\nIt provides travel suggestions, maps, and booking tools. Everything is managed in one place.\n\nWhether solo or group travel, it simplifies your journey. Perfect for frequent travelers.",
@@ -110,7 +110,7 @@
   },
   {
     "id": 7,
-    "image": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+    "image": "https://i.ibb.co.com/7L6vrTd/hero-7.png",
     "title": "FoodExpress",
     "companyName": "QuickBite",
     "description": "FoodExpress lets you order food from your favorite restaurants quickly. Browse menus and place orders easily.\n\nIt offers real-time order tracking and secure payments. You always know when your food arrives.\n\nFrom fast food to fine dining, everything is available. Enjoy delicious meals anytime.",
@@ -128,7 +128,7 @@
   },
   {
     "id": 8,
-    "image": "https://cdn-icons-png.flaticon.com/512/2462/2462719.png",
+    "image": "https://i.ibb.co.com/HTM2bYv0/hero-8.png",
     "title": "ChatNow",
     "companyName": "Connectify",
     "description": "ChatNow provides instant messaging with a simple interface. Stay connected with friends and family.\n\nIt uses secure encryption to protect your conversations. Share text, images, and files easily.\n\nWith fast performance and group chats, communication becomes seamless. Ideal for everyday messaging.",
@@ -147,7 +147,7 @@
 
   {
     "id": 9,
-    "image": "https://cdn-icons-png.flaticon.com/512/1829/1829586.png",
+    "image": "https://i.ibb.co.com/p6s74L6q/hero-9.png",
     "title": "PhotoLab",
     "companyName": "PixelWorks",
     "description": "PhotoLab offers powerful tools to edit photos like a professional. Apply filters and effects easily.\n\nIt includes advanced editing features such as layers and adjustments. Perfect for creative editing.\n\nWith simple controls, anyone can create stunning images. Great for photographers and casual users.",
@@ -166,7 +166,7 @@
 
   {
     "id": 10,
-    "image": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
+    "image": "https://i.ibb.co.com/xtqwM91Y/hero-10.png",
     "title": "WeatherNow",
     "companyName": "SkyTech",
     "description": "WeatherNow gives real-time weather updates for your location. Stay informed with accurate forecasts.\n\nIt includes hourly and weekly predictions along with alerts. Plan your day better.\n\nSimple UI and fast updates make it reliable. Perfect for daily use.",
@@ -184,7 +184,7 @@
   },
   {
     "id": 11,
-    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921222.png",
+    "image": "https://i.ibb.co.com/zWSxkJFY/hero-11.png",
     "title": "NoteMaster",
     "companyName": "WriteFlow",
     "description": "NoteMaster helps you capture ideas and notes instantly with a simple and clean interface. You can quickly jot down thoughts, create lists, and organize your content efficiently.\n\nIt supports rich text formatting, allowing you to highlight important points and structure your notes clearly. Sync features ensure your notes are available across devices.\n\nWhether for study, work, or personal use, NoteMaster keeps everything organized. It’s a perfect tool for productivity and idea management.",
@@ -202,7 +202,7 @@
   },
   {
     "id": 12,
-    "image": "https://cdn-icons-png.flaticon.com/512/686/686589.png",
+    "image": "https://i.ibb.co.com/fGNHS3p5/hero-12.png",
     "title": "BattleZone",
     "companyName": "GameCore",
     "description": "BattleZone is an action-packed multiplayer game that brings intense battles to your screen. Compete with players worldwide in real-time combat scenarios.\n\nThe game features multiple modes, weapons, and character upgrades. You can customize your gameplay style and improve your skills.\n\nWith stunning graphics and smooth controls, BattleZone delivers an immersive gaming experience. Perfect for gamers who love fast-paced action.",
@@ -220,7 +220,7 @@
   },
   {
     "id": 13,
-    "image": "https://cdn-icons-png.flaticon.com/512/1170/1170678.png",
+    "image": "https://i.ibb.co.com/sJNT2sqp/hero-13.png",
     "title": "ShopEasy",
     "companyName": "BuySmart",
     "description": "ShopEasy makes online shopping simple and convenient. Browse through millions of products across different categories.\n\nYou can compare prices, read reviews, and find the best deals instantly. Secure payment options ensure safe transactions.\n\nFast delivery and user-friendly design make it a reliable shopping app. Enjoy a seamless shopping experience anytime.",
@@ -238,7 +238,7 @@
   },
   {
     "id": 14,
-    "image": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+    "image": "https://i.ibb.co.com/JW9T6TH6/hero-14.png",
     "title": "StreamFlix",
     "companyName": "MediaHub",
     "description": "StreamFlix allows you to watch movies and TV shows on demand. Enjoy a vast collection of entertainment content.\n\nIt provides personalized recommendations based on your viewing habits. You can create watchlists and download content for offline viewing.\n\nWith high-quality streaming and smooth performance, it delivers a cinema-like experience. Perfect for entertainment lovers.",
@@ -256,7 +256,7 @@
   },
   {
     "id": 15,
-    "image": "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+    "image": "https://i.ibb.co.com/SXWHbrzX/hero-15.png",
     "title": "SecureVault",
     "companyName": "SafeNet",
     "description": "SecureVault protects your sensitive data with advanced encryption technology. Keep your files and information safe.\n\nYou can store passwords, documents, and private data securely. Multi-layer security ensures maximum protection.\n\nWith easy access and strong privacy controls, it’s ideal for personal and professional use. Your data stays secure at all times.",
@@ -274,7 +274,7 @@
   },
   {
     "id": 16,
-    "image": "https://cdn-icons-png.flaticon.com/512/747/747310.png",
+    "image": "https://i.ibb.co.com/DD0bLGRw/hero-16.png",
     "title": "PlanIt",
     "companyName": "OrganizeMe",
     "description": "PlanIt helps you schedule events and manage your daily calendar efficiently. Stay organized and on track.\n\nYou can create events, set reminders, and manage appointments easily. Sync with your calendar for seamless planning.\n\nIts simple design makes planning stress-free. Perfect for both personal and professional scheduling.",
@@ -292,7 +292,7 @@
   },
   {
     "id": 17,
-    "image": "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+    "image": "https://i.ibb.co.com/1YsmQq9L/hero-17.png",
     "title": "MapGuide",
     "companyName": "GeoTech",
     "description": "MapGuide helps you navigate routes with real-time traffic updates. Find the fastest way to your destination.\n\nIt provides turn-by-turn directions, route alternatives, and location search features. Avoid traffic with smart suggestions.\n\nWith accurate maps and easy navigation, traveling becomes simpler. Ideal for daily commuting and travel.",
@@ -310,7 +310,7 @@
   },
   {
     "id": 18,
-    "image": "https://cdn-icons-png.flaticon.com/512/29/29302.png",
+    "image": "https://i.ibb.co.com/wFS4swRp/hero-18.png",
     "title": "BookReader",
     "companyName": "Readify",
     "description": "BookReader gives you access to thousands of ebooks anytime. Read your favorite books on the go.\n\nIt includes customizable reading modes, bookmarks, and offline reading features. Enjoy a comfortable reading experience.\n\nFrom novels to educational books, everything is available in one place. Perfect for book lovers.",
@@ -328,7 +328,7 @@
   },
   {
     "id": 19,
-    "image": "https://cdn-icons-png.flaticon.com/512/1995/1995574.png",
+    "image": "https://i.ibb.co.com/9mS01p7J/hero-19.png",
     "title": "KidsLearn",
     "companyName": "EduPlay",
     "description": "KidsLearn offers fun and interactive learning games for children. It makes education enjoyable and engaging.\n\nThe app includes puzzles, quizzes, and activities designed for young learners. It helps improve cognitive skills.\n\nWith colorful design and easy navigation, kids can learn independently. Perfect for early education.",
@@ -346,7 +346,7 @@
   },
   {
     "id": 20,
-    "image": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+    "image": "https://i.ibb.co.com/7JkHhB4j/hero-20.png",
     "title": "AI Assistant",
     "companyName": "NextGen AI",
     "description": "AI Assistant helps automate daily tasks and improve productivity. It acts as your smart digital companion.\n\nYou can set reminders, manage schedules, and get quick answers using AI-powered features. It simplifies everyday tasks.\n\nWith continuous learning capabilities, it adapts to your needs. Perfect for both personal and professional use.",
