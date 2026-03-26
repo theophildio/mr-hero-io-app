@@ -73,7 +73,7 @@ src/
 
 ## Open in your browser:
 
-[Live Demo](https://hero-io-theophil-dio.netlify.app)
+[Live Demo](https://app-dock-theophil-dio.netlify.app/)
 
 ---
 
