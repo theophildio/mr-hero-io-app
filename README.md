@@ -1,12 +1,48 @@
-# React + Vite
+# Hero.IO - App Installation Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.3-blue?logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-4.4.9-green?logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://hero-io-theophil-dio.netlify.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+**Hero.IO** is a modern web application to explore, install, and manage apps from a curated list. Users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse all available apps with details like downloads, ratings, size, and reviews.
+- Search apps live with case-insensitive filtering.
+- Install apps, which are saved locally using **localStorage**.
+- Uninstall apps with a single click.
+- Sort apps by download count or size.
+- Experience global loaders and search-specific loaders for smooth UX.
+- Handle “App Not Found” scenarios gracefully.
+
+The app features a responsive navigation bar, footer, and fully functional routing using **React Router v6+**.
+
+---
+
+## Features
+
+- Live search with real-time filtering
+- Installation management with **localStorage**
+- Sort apps by download count or size
+- Global loader for page transitions
+- Search loader while filtering apps
+- Responsive navbar with active route highlighting
+- Toast notifications for install/uninstall actions
+- Graceful handling of empty results
+
+---
+
+## Technologies Used
+
+- **React.js** - Frontend UI library
+- **React Router v6** - Routing & data loaders
+- **React Hot Toast** - Notifications
+- **Axios** - Fetching app data
+- **Tailwind CSS** - Responsive styling
+- **LocalStorage** - Persisting installed apps locally
+- **Vite** - Fast build tool and dev server
