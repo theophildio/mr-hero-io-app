@@ -49,7 +49,7 @@ const Navbar = () => {
             </ul>
           </div>
           <img className="w-8" src={Logo} alt="Hero IO Logo" />
-          <span className="text-lg md:text-xl uppercase ml-1">hero.io</span>
+          <span className="text-lg md:text-xl uppercase ml-1">AppDock</span>
         </div>
 
         <div className="navbar-center hidden lg:flex">

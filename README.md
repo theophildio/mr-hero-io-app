@@ -1,4 +1,4 @@
-# Hero.IO - App Installation Manager
+# AppDock - App Installation Manager
 
 ![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3.3-blue?logo=tailwind-css&logoColor=white)
@@ -10,7 +10,7 @@
 
 ## Description
 
-**Hero.IO** is a modern web application to explore, install, and manage apps from a curated list. Users can:
+**AppDock** is a modern web application to explore, install, and manage apps from a curated list. Users can:
 
 - Browse all available apps with details like downloads, ratings, size, and reviews.
 - Search apps live with case-insensitive filtering.

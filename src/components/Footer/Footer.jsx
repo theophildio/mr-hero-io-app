@@ -47,7 +47,7 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by Hero IO - by Theophil Dio
+            Copyright © {new Date().getFullYear()} - All right reserved by AppDock - by Theophil Dio
           </p>
         </aside>
       </footer>
