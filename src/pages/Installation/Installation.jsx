@@ -21,7 +21,7 @@ const Installation = () => {
       <p className="pt-4 text-[#627382]">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div>
+      <div className="mt-6">
         {
             appList.map(installApp => <InstalledApp key={installApp.id} installApp={installApp}></InstalledApp>)
         }
