@@ -7,7 +7,7 @@ import { getAppFromDB, removeAppFromDB } from "../../utilities/addToDB";
 const Installation = () => {
   const apps = useLoaderData();
   const [appList, setAppList] = useState([]);
-  const [sortLabel, setSortLabel] = useState("Sort By Size ⬇️");
+  const [sortLabel, setSortLabel] = useState("Sort By Download Count ⬇️");
 
   useEffect(() => {
     const storedAppData = getAppFromDB();
@@ -21,18 +21,18 @@ const Installation = () => {
   const handleSort = (type) => {
     const sorted = [...appList].sort((a, b) => {
       if (type === "desc") {
-        return b.size - a.size;
+        return b.downloads - a.downloads;
       } else {
-        return a.size - b.size;
+        return a.downloads - b.downloads;
       }
     });
 
     setAppList(sorted);
 
     if (type === "desc") {
-      setSortLabel("Size: Bigger to Smaller ⬇️");
+      setSortLabel("Download Count: High-Low ⬇️");
     } else {
-      setSortLabel("Size: Smaller to Bigger ⬆️");
+      setSortLabel("Download Count: Low-High ⬆️");
     }
   };
 
@@ -90,10 +90,10 @@ const Installation = () => {
                 className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
               >
                 <li>
-                  <a onClick={() => handleSort("desc")}>Bigger to Smaller</a>
+                  <a onClick={() => handleSort("desc")}>High-Low</a>
                 </li>
                 <li>
-                  <a onClick={() => handleSort("asc")}>Smaller to Bigger</a>
+                  <a onClick={() => handleSort("asc")}>Low-High</a>
                 </li>
               </ul>
             </div>
