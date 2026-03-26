@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
+import ErrorApp from "../../assets/App-Error.png";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { getAppFromDB, removeAppFromDB } from "../../utilities/addToDB";
 
@@ -36,50 +37,79 @@ const Installation = () => {
   };
 
   const handleUninstall = (id) => {
-  removeAppFromDB(id);
+    removeAppFromDB(id);
 
-  const updatedList = appList.filter((app) => app.id !== id);
-  setAppList(updatedList);
-};
+    const updatedList = appList.filter((app) => app.id !== id);
+    setAppList(updatedList);
+  };
 
   return (
     <div className="py-16 px-16 mx-auto text-center bg-[#D9D9D9]">
-      <h2 className="text-5xl font-bold">Your Installed Apps</h2>
-      <p className="pt-4 text-[#627382]">
-        Explore All Trending Apps on the Market developed by us
-      </p>
-      <div className="flex justify-between items-center my-4">
-        <h3 className="font-bold">{appList.length} App Found</h3>
-        <div className="dropdown dropdown-end">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn m-1 bg-[#D9D9D9] border-gray-400"
+      {appList.length === 0 ? (
+        <div className="text-center py-10">
+          <figure>
+            <img
+              className="inline-block mb-5"
+              src={ErrorApp}
+              alt="App Not Found"
+            />
+          </figure>
+          <h2 className="text-3xl font-bold">OPPS!! APP NOT FOUND</h2>
+          <p className="text-gray-500 my-4">
+            The App you are requesting is not found on our system. please try
+            another apps
+          </p>
+          <Link
+            to="/"
+            className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] px-8 text-white"
           >
-            {sortLabel}
-          </div>
-          <ul
-            tabIndex="-1"
-            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-          >
-            <li>
-              <a onClick={() => handleSort("desc")}>Bigger to Smaller</a>
-            </li>
-            <li>
-              <a onClick={() => handleSort("asc")}>Smaller to Bigger</a>
-            </li>
-          </ul>
+            Go Back
+          </Link>
         </div>
-      </div>
-      <div className="mt-6">
-        {appList.map((installApp) => (
-          <InstalledApp
-            key={installApp.id}
-            installApp={installApp}
-            handleUninstall={handleUninstall}
-          ></InstalledApp>
-        ))}
-      </div>
+      ) : (
+        <>
+          <h2 className="text-5xl font-bold">Your Installed Apps</h2>
+          <p className="pt-4 text-[#627382]">
+            Explore All Trending Apps on the Market developed by us
+          </p>
+
+          <div className="flex justify-between items-center my-4">
+            <h3 className="font-bold">{appList.length} App Found</h3>
+
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn m-1 bg-[#D9D9D9] border-gray-400"
+              >
+                {sortLabel}
+              </div>
+
+              <ul
+                tabIndex="-1"
+                className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+              >
+                <li>
+                  <a onClick={() => handleSort("desc")}>Bigger to Smaller</a>
+                </li>
+                <li>
+                  <a onClick={() => handleSort("asc")}>Smaller to Bigger</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-6">
+            {appList.map((installApp) => (
+              <InstalledApp
+                key={installApp.id}
+                installApp={installApp}
+                handleUninstall={handleUninstall}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
