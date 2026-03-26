@@ -13,7 +13,7 @@ const Product = ({ product }) => {
 
   return (
     <Link to={`/apps/appdetails/${id}`}>
-      <div className="flex flex-col justify-between bg-base-100 shadow-md p-2 md:p-5 h-[87.5] rounded-lg">
+      <div className="flex flex-col justify-between bg-base-100 shadow-md p-2 md:p-5 h-80 rounded-lg">
         <figure className="flex flex-col items-center">
           <img className="w-2/3" src={image} alt={title} />
         </figure>
